@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12주차 과제</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style-type: none;
+        }
+        body {
+            font-family: "맑은 고딕","돋움";
+            font-size: 100%;
+            background-color: #F4FAF8;
+        }
+        [class*="c_"] {
+            float: left;
+            padding: 10px;
+        }
+
+        [class*="c_"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width:600px) {
+            .c_m_1 {width: 8.33%;}
+            .c_m_2 {width: 16.66%;}
+            .c_m_3 {width: 25%;}
+            .c_m_4 {width: 33.33%;}
+            .c_m_5 {width: 41.66%;}
+            .c_m_6 {width: 50%;}
+            .c_m_7 {width: 58.33%;}
+            .c_m_8 {width: 66.66%;}
+            .c_m_9 {width: 75%;}
+            .c_m_10 {width: 83.33%;}
+            .c_m_11 {width: 91.66%;}
+            .c_m_12 {width: 100%;}
+        }
+
+        @media only screen and (min-width:768px) {
+            .c_1 {width: 8.33%;}
+            .c_2 {width: 16.66%;}
+            .c_3 {width: 25%;}
+            .c_4 {width: 33.33%;}
+            .c_5 {width: 41.66%;}
+            .c_6 {width: 50%;}
+            .c_7 {width: 58.33%;}
+            .c_8 {width: 66.66%;}
+            .c_9 {width: 75%;}
+            .c_10 {width: 83.33%;}
+            .c_11 {width: 91.66%;}
+            .c_12 {width: 100%;}
+        }
+
+        header {
+        height: 80px;
+        padding: 20px;
+        background-color: #3ca869;
+        color: white;
+        }
+        #menu {
+            color: #17695c;
+        }
+        #menu a {display: block;}
+        #menu li {
+            padding: 10px;
+            margin: 5px 0 0 0 ;
+            background-color: #F4FAF8;
+            border: solid 1px #17695c;
+        }
+        #main {
+            padding: 15px;
+        }
+        #main h1 {color: #17695c;}
+        #main p {
+            padding: 10px;
+            font-size: 0.95em;
+            line-height: 130%;
+        }
+        .text_style {
+            font-weight: bold;
+        }
+        #video img {
+            width: 100%;
+        }
+        #video h4 {color: #17695c;}
+        #video li {
+            margin: 5px 0 0 0;
+        }
+        footer {
+            height: 60px;
+            padding: 10px;
+            clear:  both;
+            text-align: center;
+            background-color: #eff7f0;
+        }
+        a, a:visited, a:hover, a:active {
+            text-decoration: none;
+            color: #0e4239;
+        }
+        #video a:visited { color: #0e4239;}
+        #video a:hover { color: hotpink;}
+        #video a:active { color: greenyellow;}
+        
+        </style>
+    </head>
+    <body>
+        <header  class="c_12">
+            <h1>pet log 홈페이지</h1>
+        </header>
+
+        <aside id="menu" class="c_m_3 c_3">
+            <ul>
+                <li><a href="./index.html">반려동물 CPR</a></li>
+                <li><a href="./숙소.html">숙소</a></li>
+                <li><a href="./식당.html">식당</a></li>
+                <li><a href="./장소.html">장소</a></li>
+                <li><a href="./마이페이지.html">마이페이지</a></li>
+            </ul>
+        </aside>
+        <section id="main" class="c_m_9 c_6">
+            <h1>반려동물 CPR</h1>
+            <p class="text_style">01. 의식 및 호흡 확인</p>
+            <p class="text_style">02. 주변 도움 요청 및 병원연락</p>
+            <p class="text_style">03. 기도 확보</p>
+            <p class="text_style">04. 올바른 자세 잡기</p>
+            <p class="text_style">05. 압박 위치 찾기</p>
+            <p class="text_style">06. 가슴 압박 시행 (30회)</p>
+            <p class="text_style">07. 인공호흡 시행 (2회)</p>
+            <p class="text_style">08. 압박과 호흡 반복(30:2법칙)</p>
+            <p class="text_style">09. 2분마다 상태 재확인</p>
+            <p class="text_style">10. 병원 이송</p>
+            </section>
+            <aside id="video" class="c_m_12 c_3">
+                <h4 >CPR 동영상</h4>
+                <ul>
+                    <li><video width="300" src="./반려동물 cpr.mp4" controls autoplay></video></li>
+                    <li><a href="https://youtu.be/IYqDx8NDAcU?si=oPAZhxEpuJPOvk4x" target="_blank">➡️반려동물 CPR 영상 바로보기</a></li>
+                </ul>
+            </aside>
+            <footer class="c_12">
+                COPYRIGHT (C) PET LOG All Rights Reserved.
+            </footer>
+        
+    </body>
+</html>
