@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숙소</title>
+    <style> 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @media only screen and (max-width:620px) {
+            .header,.nav,.main, .left, .right, .footer {
+                width: 100%;
+            }
+        }
+        .header #logo {
+            float: left;
+            width: 25% ;
+        }
+        .header #moto {
+            float: left;
+            width: 20% ;
+        }
+        .header #top_menu {
+            float: right;
+            width: 15%;
+            height: 20%;
+            margin-top: 8%;
+        }
+        #top_menu li {
+            list-style-type: none;
+            display: inline-block;
+            color: #17695C;
+        }
+        #top_menu a{
+            text-decoration: none;
+            color: #17695C;
+        }
+        #top_menu a:hover { color: purple;}
+        .clear {
+            clear: both;
+        }
+        .line {
+            margin: 1% 1%;
+            border: solid 1px rgb(218, 218, 218);
+        }
+        .nav {
+            text-align: center;
+        }
+        .nav ul li {
+            border: solid 1px #1F7A6B ;
+            margin: 0.5% 0.5%;
+            display: inline-block;
+            width: 18%;
+            padding: 1% 1%;
+        }
+        .nav a {
+            display: block;
+            text-decoration: none;
+            color: #17695C;
+            font-weight: bold;
+        }
+        .nav a:hover { color: hotpink; }
+        #left {
+            width: 45%;
+            margin: 2.2%;
+        }
+        #left img {
+            width: 100%;
+        }
+        #left, #right {
+            display: inline-block;
+        }
+        #right {
+            width: 45%;
+            margin: 2.2%;
+            vertical-align: top;
+        }
+        #right h3 {
+            padding: 1% 5%;
+        }
+        #right p {
+           padding: 1% 5%;
+        }
+        .box {
+            border: solid 1px #e5f1e9;
+            border-radius: 30px;
+            background-color: #e5f1e9;
+            width: 20%;
+            text-align: center;
+            padding: 0.7%;
+            margin: 3% 1% 1% 3%;
+            color: #17695C;
+        }
+        .box_main {
+            border: solid 1px rgb(218, 218, 218);
+            border-radius: 15px;
+            background-color: white;
+            width: 95%;
+            padding: 0.7%;
+            margin: 7% 1% 1% 3%;
+            
+        }
+        .box_main ul  {
+            margin-left: 5%;
+            padding: 2%;
+        }
+        .box_main p {
+            margin-top: 2%;
+        }
+        .box_main a, .box_main a:visited { text-decoration: none; color: black;}
+        .box_main a:hover { color: hotpink;}
+        .box_main a:active { color: yellowgreen;}
+        button {
+            float: right;
+            border: solid 1px #17695C;
+            border-radius: 10px;
+            background-color: #17695C;
+            color: white;
+            padding: 2%;
+            margin: 2%;
+        }
+        .point { color: #17695C; }
+        .footer {
+            background-color: #e5f1e9;
+            padding: 1% 3%;  
+            margin-top: 7px;
+            font-size: 13px;
+        }
+        #adress ul {
+            list-style-type: none;
+        }
+        .footer #link {
+            float: right;
+            color: #0D2C54;
+            text-align: right;
+        }
+        .footer #link select  {
+            width: 100px;
+            height: 20px;
+            font-size: 13px;
+            padding: 1%;
+            margin: 1% 0;
+        }
+        </style>
+</head>
+<body>
+    <div style="overflow: auto;">
+        <div class="header">
+            <a href="./index.html"><img id="logo" src="./logo.png" title="pet log, 반려생활의 모든 기록, 펫로그"></a>
+            <img id="moto" src="./moto.jpg" title="함께하는 하루, 더 안전하고 더 즐겁게">
+            <ul id="top_menu">
+                <li><a href="#">로그인</a></li>
+                <li>|</li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+            <div class="clear"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="nav"> 
+            <ul>
+                <li><a href="./cpr.html">반려동물 cpr</a></li>
+                <li><a href="./lodging.html">숙소</a></li>
+                <li><a href="./restaurant.html">식당/카페</a></li>
+                <li><a href="./place.html">장소</a></li>
+                <li><a href="./mypage.html">마이페이지</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <aside id="left">
+                <img src="./lodging.jpg" title="체리몽 애견 풀빌라">
+                
+                <p><big><b>가평 체리몽 펜션</b></big></p>
+                <p><small>경기 가평군 상면 임초밤안골로 119-102 체리몽 애견풀빌라</small></p>
+                </aside>
+            <aside id="right">
+                <h3>장소 상세정보</h3>
+                <div class="line"></div>
+                <div class="box">숙소</div>
+                <p>야외 수영장 워터슬라이드 무료 이용 가능한 풀빌라</p>
+                <div class="box_main">
+                    <p><b>주요 리뷰</b></p>
+                    <ul>
+                        <small>
+                        <li> 강아지 운동시설이 구비되어 있어 너무 좋았어요</li>
+                        <li> 아침 조식이 제공되고, 계단도 논슬립으로 되어있어요</li>
+                        <li> 펫 드라이룸이 있어, 씻기기도 편합니다</li>
+                        <br>
+                        <li style="list-style-type: none; float: right; vertical-align: top;"><a href="#">더보기..</a></li></small>
+                        <br>
+                    </ul>
+                </div>
+                <form>
+                    <button type="submit"> 내 리뷰 쓰기  </button>
+                </form>
+            </aside>
+        </div>
+
+
+        <div class="footer">
+            <article id="link">
+                <h3>고객센터 2025-33784</h3>
+                <select>
+                    <option>가천대</option>
+                    <option>네이버</option>
+                    <option>구글</option>
+                </select>
+                <div id="icons">
+                    <img src="./icon_blog.png">
+                    <a href="#"><img src="./incon_ins.jpg"></a>
+                </div>
+            </article>
+            <article id="adress">
+                <ul>
+                    <li>pet log(주)</li>
+                    <li>대표 : 유다솔</li>
+                    <li>이메일 : petlog@gachon.ac.kr</li>
+                    <li>주소 : 경기 성남시 수정구 성남대로 1342, 가천대학교 ai관 510호</li>
+                    <li>전화 : (031)2025-33784, FAX :(031)2025-337844 </li>
+                </ul>
+            </article>
+    </div>
+
+</body>
+</html>

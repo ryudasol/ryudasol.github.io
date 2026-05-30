@@ -1,151 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kos">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12주차 과제</title>
-    <style>
+    <title>pet log</title>
+    <style> 
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        ul {
-            list-style-type: none;
+        @media only screen and (max-width:620px) {
+            .header,.nav,.main, .left, .right, .footer {
+                width: 100%;
+            }
         }
-        body {
-            font-family: "맑은 고딕","돋움";
-            font-size: 100%;
-            background-color: #F4FAF8;
-        }
-        [class*="c_"] {
+        .header #logo {
             float: left;
-            padding: 10px;
+            width: 25% ;
         }
-
-        [class*="c_"] {
-            width: 100%;
+        .header #moto {
+            float: left;
+            width: 20% ;
         }
-
-        @media only screen and (min-width:600px) {
-            .c_m_1 {width: 8.33%;}
-            .c_m_2 {width: 16.66%;}
-            .c_m_3 {width: 25%;}
-            .c_m_4 {width: 33.33%;}
-            .c_m_5 {width: 41.66%;}
-            .c_m_6 {width: 50%;}
-            .c_m_7 {width: 58.33%;}
-            .c_m_8 {width: 66.66%;}
-            .c_m_9 {width: 75%;}
-            .c_m_10 {width: 83.33%;}
-            .c_m_11 {width: 91.66%;}
-            .c_m_12 {width: 100%;}
+        .header #top_menu {
+            float: right;
+            width: 15%;
+            height: 20%;
+            margin-top: 8%;
         }
-
-        @media only screen and (min-width:768px) {
-            .c_1 {width: 8.33%;}
-            .c_2 {width: 16.66%;}
-            .c_3 {width: 25%;}
-            .c_4 {width: 33.33%;}
-            .c_5 {width: 41.66%;}
-            .c_6 {width: 50%;}
-            .c_7 {width: 58.33%;}
-            .c_8 {width: 66.66%;}
-            .c_9 {width: 75%;}
-            .c_10 {width: 83.33%;}
-            .c_11 {width: 91.66%;}
-            .c_12 {width: 100%;}
+        #top_menu li {
+            list-style-type: none;
+            display: inline-block;
+            color: #17695C;
         }
-
-        header {
-        height: 80px;
-        padding: 20px;
-        background-color: #3ca869;
-        color: white;
+        #top_menu a{
+            text-decoration: none;
+            color: #17695C;
         }
-        #menu {
-            color: #17695c;
+        #top_menu a:hover { color: purple;}
+        .clear {
+            clear: both;
         }
-        #menu a {display: block;}
-        #menu li {
-            padding: 10px;
-            margin: 5px 0 0 0 ;
-            background-color: #F4FAF8;
-            border: solid 1px #17695c;
+        .line {
+            margin:1% 2%;
+            border: solid 1px rgb(218, 218, 218);
         }
-        #main {
-            padding: 15px;
+        .nav {
+            text-align: center;
         }
-        #main h1 {color: #17695c;}
-        #main p {
-            padding: 10px;
-            font-size: 0.95em;
-            line-height: 130%;
+        .nav ul li {
+            border: solid 1px #1F7A6B ;
+            margin: 0.5% 0.5%;
+            display: inline-block;
+            width: 18%;
+            padding: 1% 1%;
         }
-        .text_style {
+        .nav a, .nav a:visited {
+            display: block;
+            text-decoration: none;
+            color: #17695C;
             font-weight: bold;
         }
-        #video img {
+        .nav a:hover { color: hotpink; }
+        .nav a:active { color: yellowgreen;}
+        .main {
+            margin: 1% 2.3%;
+        }
+        #left {
+            width: 39% ;
+            display: inline-block;
+        }
+        #left img {
             width: 100%;
         }
-        #video h4 {color: #17695c;}
-        #video li {
-            margin: 5px 0 0 0;
+        #right {
+            margin-left: 1%;
+            width: 59.4%;
+            vertical-align: top;
+            display: inline-block;
         }
-        footer {
-            height: 60px;
-            padding: 10px;
-            clear:  both;
+        #right li {
+            list-style-type: none;
+            padding: 1% 0;
+            padding-left: 0.5%;
+        }
+        #top li {
+            display: inline-block;
+            width: 32.9%;
             text-align: center;
-            background-color: #eff7f0;
         }
-        a, a:visited, a:hover, a:active {
-            text-decoration: none;
-            color: #0e4239;
+        #top img {
+            width: 100%;
         }
-        #video a:visited { color: #0e4239;}
-        #video a:hover { color: hotpink;}
-        #video a:active { color: greenyellow;}
-        
-        </style>
-    </head>
-    <body>
-        <header  class="c_12">
-            <h1>pet log 홈페이지</h1>
-        </header>
+        #bottom_left, #bottom_right {
+            display: inline-block;
+            width: 47.5%;
+            text-align: center;
+            border: solid 1px #17695C;
+            border-radius: 30px;
+            margin-left: 2%;
+        }
+        #bottom_left ul, #bottom_right ul {
+            padding: 4% 2%;
+        }
+        #top li {
+            text-align: center;
+        }
+        .point { color: #17695C; }
+        .footer {
+            background-color: #e5f1e9;
+            padding: 1% 3%;  
+            margin-top: 7px;
+            font-size: 13px;
+        }
+        #adress ul {
+            list-style-type: none;
+        }
+        .footer #link {
+            float: right;
+            color: #0D2C54;
+            text-align: right;
+        }
+        .footer #link select  {
+            width: 100px;
+            height: 20px;
+            font-size: 13px;
+            padding: 1%;
+            margin: 1% 0;
+        }
 
-        <aside id="menu" class="c_m_3 c_3">
-            <ul>
-                <li><a href="./index.html">반려동물 CPR</a></li>
-                <li><a href="./숙소.html">숙소</a></li>
-                <li><a href="./식당.html">식당</a></li>
-                <li><a href="./장소.html">장소</a></li>
-                <li><a href="./마이페이지.html">마이페이지</a></li>
+    </style>
+</head>
+<body>
+    <div style="overflow: auto;">
+        <div class="header">
+            <a href="./index.html"><img id="logo" src="./logo.png" title="pet log, 반려생활의 모든 기록, 펫로그"></a>
+            <img id="moto" src="./moto.jpg" title="함께하는 하루, 더 안전하고 더 즐겁게">
+            <ul id="top_menu">
+                <li><a href="#">로그인</a></li>
+                <li>|</li>
+                <li><a href="#">회원가입</a></li>
             </ul>
-        </aside>
-        <section id="main" class="c_m_9 c_6">
-            <h1>반려동물 CPR</h1>
-            <p class="text_style">01. 의식 및 호흡 확인</p>
-            <p class="text_style">02. 주변 도움 요청 및 병원연락</p>
-            <p class="text_style">03. 기도 확보</p>
-            <p class="text_style">04. 올바른 자세 잡기</p>
-            <p class="text_style">05. 압박 위치 찾기</p>
-            <p class="text_style">06. 가슴 압박 시행 (30회)</p>
-            <p class="text_style">07. 인공호흡 시행 (2회)</p>
-            <p class="text_style">08. 압박과 호흡 반복(30:2법칙)</p>
-            <p class="text_style">09. 2분마다 상태 재확인</p>
-            <p class="text_style">10. 병원 이송</p>
-            </section>
-            <aside id="video" class="c_m_12 c_3">
-                <h4 >CPR 동영상</h4>
+            <div class="clear"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="nav"> 
+            <ul>
+                <li><a href="./cpr.html">반려동물 cpr</a></li>
+                <li><a href="#">숙소</a></li>
+                <li><a href="#">식당/카페</a></li>
+                <li><a href="#">장소</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <aside id="left">
+                <img src="./main_moong.png" alt="">
+            </aside>
+            <aside id="right">
                 <ul>
-                    <li><video width="300" src="./반려동물 cpr.mp4" controls autoplay></video></li>
-                    <li><a href="https://youtu.be/IYqDx8NDAcU?si=oPAZhxEpuJPOvk4x" target="_blank">➡️반려동물 CPR 영상 바로보기</a></li>
+                    <li>
+                        <ul id="top">
+                            <p>⭐ 이번주 추천 장소</p>
+                            <li><img src="./lake_moong.jpg" title="산정호수"><br>1. 산정호수</li>
+                            <li><img src="./place_hub.jpg" title="허브아이랜드"><br>2. 허브 아이랜드</li>
+                            <li><img src="./place_ocean.jpg" title="난지도 해수욕장"><br>3. 대난지도 해수욕장</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>
+                        <ul id="bottom">
+                            <li id="bottom_left">
+                                <ul>
+                                    <li>여름철 산책 시간은</li>
+                                    <li class="point"><b>아침/저녁이 좋아요!</b></li>
+                                    <li><small><small>뜨거운 지면은 발바닥의 화상의 원인이 됩니다</small></small></li>
+                                </ul>
+                            </li>
+                            <li  id="bottom_right">
+                                <ul>
+                                    <li>반려동물 동반 가능 시설</li>
+                                    <li>정보를 꾸준히 업데이트 중 입니다.</li>
+                                    <li><small><small>장소에 방문해서 리뷰를 작성해주세요!</small></small></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </aside>
-            <footer class="c_12">
-                COPYRIGHT (C) PET LOG All Rights Reserved.
-            </footer>
-        
-    </body>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <article id="link">
+            <h3>고객센터 2025-33784</h3>
+            <select>
+                <option>가천대</option>
+                <option>네이버</option>
+                <option>구글</option>
+            </select>
+            <div id="icons">
+                <img src="./icon_blog.png">
+                <a href="#"><img src="./incon_ins.jpg"></a>
+            </div>
+        </article>
+        <article id="adress">
+            <ul>
+                <li>pet log(주)</li>
+                <li>대표 : 유다솔</li>
+                <li>이메일 : petlog@gachon.ac.kr</li>
+                <li>주소 : 경기 성남시 수정구 성남대로 1342, 가천대학교 ai관 510호</li>
+                <li>전화 : (031)2025-33784, FAX :(031)2025-337844 </li>
+            </ul>
+        </article>
+    </div>
+    
+
+    
+    
+    
+</body>
 </html>
