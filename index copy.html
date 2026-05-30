@@ -10,6 +10,41 @@
             padding: 0;
             box-sizing: border-box;
         }
+        @media (max-width: 768px) {
+
+            /* header 세로 */
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            /* nav 세로 */
+            .nav ul {
+                flex-direction: column;
+            }
+
+            /* main 세로 */
+            .main {
+                flex-direction: column;
+            }
+
+            /* 추천 이미지 세로 */
+            #top {
+                flex-direction: column;
+            }
+
+            /* 하단 박스 세로 */
+            #bottom {
+                flex-direction: column;
+            }
+
+            /* footer 세로 */
+            .footer {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
         .header #logo {
             float: left;
             width: 25% ;
@@ -82,14 +117,14 @@
         }
         #top li {
             display: inline-block;
-            width: 32%;
+            width: 32.9%;
             text-align: center;
         }
         #top img {
             width: 100%;
         }
         #bottom_left, #bottom_right {
-            float: left;
+            display: inline-block;
             width: 47.5%;
             text-align: center;
             border: solid 1px #17695C;
@@ -124,11 +159,6 @@
             padding: 1%;
             margin: 1% 0;
         }
-        @media only screen and (max-width:620px) {
-            .header,.nav,.main, #left, #right, .footer {
-                width: 100%;
-            }
-        }
 
     </style>
 </head>
@@ -137,13 +167,18 @@
         <div class="header">
             <a href="./index.html"><img id="logo" src="./logo.png" title="pet log, 반려생활의 모든 기록, 펫로그"></a>
             <img id="moto" src="./moto.jpg" title="함께하는 하루, 더 안전하고 더 즐겁게">
+            <ul id="top_menu">
+                <li><a href="#">로그인</a></li>
+                <li>|</li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
             <div class="clear"></div>
             <div class="line"></div>
         </div>
 
         <div class="nav"> 
             <ul>
-                <li><a href="./cpr.html">cpr</a></li>
+                <li><a href="./cpr.html">반려동물 cpr</a></li>
                 <li><a href="./lodging.html">숙소</a></li>
                 <li><a href="./restaurant.html">식당/카페</a></li>
                 <li><a href="./place.html">장소</a></li>
@@ -153,7 +188,7 @@
 
         <div class="main">
             <aside id="left">
-                <img src="./main_moong.png">
+                <img src="./main_moong.png" alt="">
             </aside>
             <aside id="right">
                 <ul>
@@ -162,7 +197,7 @@
                             <p>⭐ 이번주 추천 장소</p>
                             <li><img src="./lake_moong.jpg" title="산정호수"><br>1. 산정호수</li>
                             <li><img src="./place_hub.jpg" title="허브아이랜드"><br>2. 허브 아이랜드</li>
-                            <li><img src="./place_ocean.jpg" title="대난지도"><br>3. 대난지도</li>
+                            <li><img src="./place_ocean.jpg" title="난지도 해수욕장"><br>3. 대난지도 해수욕장</li>
                         </ul>
                     </li>
                     <br>
@@ -178,7 +213,7 @@
                             <li  id="bottom_right">
                                 <ul>
                                     <li>반려동물 동반 가능 시설</li>
-                                    <li>정보를 업데이트 중 입니다.</li>
+                                    <li>정보를 꾸준히 업데이트 중 입니다.</li>
                                     <li><small><small>장소에 방문해서 리뷰를 작성해주세요!</small></small></li>
                                 </ul>
                             </li>

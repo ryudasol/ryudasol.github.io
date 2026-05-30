@@ -10,35 +10,20 @@
             padding: 0;
             box-sizing: border-box;
         }
+        
         .header #logo {
             float: left;
-            width: 25% ;
+            width: 30% ;
         }
         .header #moto {
             float: left;
-            width: 20% ;
+            width: 25% ;
         }
-        .header #top_menu {
-            float: right;
-            width: 15%;
-            height: 20%;
-            margin-top: 8%;
-        }
-        #top_menu li {
-            list-style-type: none;
-            display: inline-block;
-            color: #17695C;
-        }
-        #top_menu a{
-            text-decoration: none;
-            color: #17695C;
-        }
-        #top_menu a:hover { color: purple;}
         .clear {
             clear: both;
         }
         .line {
-            margin:1% 2%;
+            margin: 5px 10px;
             border: solid 1px rgb(218, 218, 218);
         }
         .nav {
@@ -46,10 +31,11 @@
         }
         .nav ul li {
             border: solid 1px #1F7A6B ;
-            margin: 0.5% 0.5%;
             display: inline-block;
-            width: 18%;
-            padding: 1% 1%;
+            margin: 5px;
+            margin-left: 20px;
+            padding: 8px;
+            width: 250px;
         }
         .nav a, .nav a:visited {
             display: block;
@@ -60,47 +46,52 @@
         .nav a:hover { color: hotpink; }
         .nav a:active { color: yellowgreen;}
         .main {
-            margin: 1% 2.3%;
+            margin: 15px 30px;
+            margin-left: 25px;
         }
         #left {
+            float: left ;
             width: 39% ;
-            display: inline-block;
-        }
-        #left img {
-            width: 100%;
         }
         #right {
-            margin-left: 1%;
+            float: left;
             width: 59.4%;
             vertical-align: top;
-            display: inline-block;
         }
         #right li {
             list-style-type: none;
-            padding: 1% 0;
-            padding-left: 0.5%;
+            padding: 10px 0;
+            padding-left: 5px;
         }
+        #top p { margin-left: 15px;}
         #top li {
-            display: inline-block;
-            width: 32%;
+            float: right;
+            width: 32.9%;
             text-align: center;
         }
         #top img {
             width: 100%;
         }
-        #bottom_left, #bottom_right {
+        #bottom {
+            margin: 20px;
+        }
+        #bottom li {
             float: left;
-            width: 47.5%;
             text-align: center;
             border: solid 1px #17695C;
             border-radius: 30px;
-            margin-left: 2%;
-        }
-        #bottom_left ul, #bottom_right ul {
-            padding: 4% 2%;
+            padding: 30px;
+            width: 45%;
+            margin: 10px;
+            margin-left: 0;
         }
         #top li {
             text-align: center;
+        }
+        @media only screen and (max-width:620px) {
+            .header,#left, #right, #bottom {
+                width: 100%;
+            }
         }
         .point { color: #17695C; }
         .footer {
@@ -121,13 +112,8 @@
             width: 100px;
             height: 20px;
             font-size: 13px;
-            padding: 1%;
-            margin: 1% 0;
-        }
-        @media only screen and (max-width:620px) {
-            .header,.nav,.main, #left, #right, .footer {
-                width: 100%;
-            }
+            padding: 10px;
+            margin: 10px 0;
         }
 
     </style>
@@ -143,7 +129,7 @@
 
         <div class="nav"> 
             <ul>
-                <li><a href="./cpr.html">cpr</a></li>
+                <li><a href="./cpr.html">반려동물 cpr</a></li>
                 <li><a href="./lodging.html">숙소</a></li>
                 <li><a href="./restaurant.html">식당/카페</a></li>
                 <li><a href="./place.html">장소</a></li>
@@ -152,40 +138,38 @@
         </div>
 
         <div class="main">
-            <aside id="left">
-                <img src="./main_moong.png">
-            </aside>
-            <aside id="right">
+            <div id="left">
+                <img src="./main_moong.png" width="100%">
+            </div>
+            <div id="right">
                 <ul>
                     <li>
                         <ul id="top">
                             <p>⭐ 이번주 추천 장소</p>
-                            <li><img src="./lake_moong.jpg" title="산정호수"><br>1. 산정호수</li>
+                            <li><img src="./lake_moong.jpg" title="산정호수"><br>3. 산정호수</li>
                             <li><img src="./place_hub.jpg" title="허브아이랜드"><br>2. 허브 아이랜드</li>
-                            <li><img src="./place_ocean.jpg" title="대난지도"><br>3. 대난지도</li>
+                            <li><img src="./place_ocean.jpg" title="대난지도 바다"><br>1. 대난지도 바다</li>
                         </ul>
                     </li>
                     <br>
                     <li>
                         <ul id="bottom">
-                            <li id="bottom_left">
-                                <ul>
-                                    <li>여름철 산책 시간은</li>
-                                    <li class="point"><b>아침/저녁이 좋아요!</b></li>
-                                    <li><small><small>뜨거운 지면은 발바닥의 화상의 원인이 됩니다</small></small></li>
-                                </ul>
+                            <li>
+                                여름철 산책 시간은<br>
+                                <b>아침/저녁이 좋아요!</b> 
+                                <br>
+                                <small><small>뜨거운 지면은 발바닥의 화상의 원인이 됩니다</small></small>
                             </li>
-                            <li  id="bottom_right">
-                                <ul>
-                                    <li>반려동물 동반 가능 시설</li>
-                                    <li>정보를 업데이트 중 입니다.</li>
-                                    <li><small><small>장소에 방문해서 리뷰를 작성해주세요!</small></small></li>
-                                </ul>
+                            <li>
+                                반려동물 동반 가능 시설 <br>
+                                정보를 꾸준히 업데이트 중 입니다. <br>
+                                <small><small>장소에 방문해서 리뷰를 작성해주세요!</small></small>
+
                             </li>
                         </ul>
                     </li>
                 </ul>
-            </aside>
+            </div>
         </div>
 
     </div>

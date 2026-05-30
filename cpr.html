@@ -10,11 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-        @media only screen and (max-width:620px) {
-            .header,.nav,.main, .left, .right, .footer {
-                width: 100%;
-            }
-        }
         .header #logo {
             float: left;
             width: 25% ;
@@ -23,22 +18,6 @@
             float: left;
             width: 20% ;
         }
-        .header #top_menu {
-            float: right;
-            width: 15%;
-            height: 20%;
-            margin-top: 8%;
-        }
-        #top_menu li {
-            list-style-type: none;
-            display: inline-block;
-            color: #17695C;
-        }
-        #top_menu a{
-            text-decoration: none;
-            color: #17695C;
-        }
-        #top_menu a:hover { color: purple;}
         .clear {
             clear: both;
         }
@@ -88,7 +67,6 @@
         #right li {
             padding: 1%;
         }
-
         .point { color: #17695C; }
         .footer {
             background-color: #e5f1e9;
@@ -111,6 +89,11 @@
             padding: 1%;
             margin: 1% 0;
         }
+        @media only screen and (max-width:620px) {
+            .header,.nav,.main, #left, #right, .footer {
+                width: 100%;
+            }
+        }
         </style>
 </head>
 <body>
@@ -118,20 +101,15 @@
         <div class="header">
             <a href="./index.html"><img id="logo" src="./logo.png" title="pet log, 반려생활의 모든 기록, 펫로그"></a>
             <img id="moto" src="./moto.jpg" title="함께하는 하루, 더 안전하고 더 즐겁게">
-            <ul id="top_menu">
-                <li><a href="#">로그인</a></li>
-                <li>|</li>
-                <li><a href="#">회원가입</a></li>
-            </ul>
             <div class="clear"></div>
             <div class="line"></div>
         </div>
 
         <div class="nav"> 
             <ul>
-                <li><a href="./cpr.html">반려동물 cpr</a></li>
+                <li><a href="./cpr.html">cpr</a></li>
                 <li><a href="./lodging.html">숙소</a></li>
-                <li><a href="./restaurant.html">식당/카페</a></li>
+                <li><a href="./restaurant.html">식당</a></li>
                 <li><a href="./place.html">장소</a></li>
                 <li><a href="./mypage.html">마이페이지</a></li>
             </ul>
