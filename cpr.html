@@ -19,6 +19,22 @@
             float: left;
             width: 35% ;
         }
+        .header #top_menu {
+            float: right;
+            width: 15%;
+            height: 20%;
+            margin-top: 14%;
+        }
+        #top_menu li {
+            list-style-type: none;
+            display: inline-block;
+            color: #17695C;
+        }
+        #top_menu a{
+            text-decoration: none;
+            color: #17695C;
+        }
+        #top_menu a:hover { color: purple;}
         .clear {
             clear: both;
         }
@@ -102,19 +118,26 @@
         <div class="header">
             <a href="./index.html"><img id="logo" src="./logo.png" title="pet log, 반려생활의 모든 기록, 펫로그"></a>
             <img id="moto" src="./moto.jpg" title="함께하는 하루, 더 안전하고 더 즐겁게">
+            <ul id="top_menu">
+                <li><a href="#">로그인</a></li>
+                <li>|</li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
             <div class="clear"></div>
             <div class="line"></div>
+
+            <div class="nav"> 
+                <ul>
+                    <li><a href="./cpr.html">cpr</a></li>
+                    <li><a href="./lodging.html">숙소</a></li>
+                    <li><a href="./restaurant.html">식당</a></li>
+                    <li><a href="./place.html">장소</a></li>
+                    <li><a href="./mypage.html"><small>마이페이지</small></a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="nav"> 
-            <ul>
-                <li><a href="./cpr.html">cpr</a></li>
-                <li><a href="./lodging.html">숙소</a></li>
-                <li><a href="./restaurant.html">식당</a></li>
-                <li><a href="./place.html">장소</a></li>
-                <li><a href="./mypage.html"><small>마이페이지</small></a></li>
-            </ul>
-        </div>
+        
 
         <div class="main">
             <aside id="left">
